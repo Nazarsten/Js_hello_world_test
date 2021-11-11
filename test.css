@@ -1,0 +1,26 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    margin:100px;
+}
+.sten{
+    width: 100px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+.box:before{
+     content: 'sten';
+     width: 10px;
+     height: 10px;
+    border-radius: 50%;
+    background-color: lawngreen;
+
+}
+.box::after{
+    content: 'igor';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: lawngreen;
+
+}
