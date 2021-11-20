@@ -1,0 +1,33 @@
+.user_box{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: aqua solid 2px;
+    margin: 10px;
+    background-color: honeydew;
+
+}
+body{
+    margin: 0 auto;
+    width: 1900px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h3{
+    margin: 10px;
+    text-align: start;
+}
+.adress_block{
+    margin-top: 30px;
+}
+p{
+    margin: 10px;
+    text-align: start;
+}
+.span{
+    margin-right: 20px;
+    border: aqua 2px solid;
+    padding: 5px;
+}

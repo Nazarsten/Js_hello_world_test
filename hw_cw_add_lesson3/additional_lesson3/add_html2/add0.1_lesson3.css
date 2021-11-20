@@ -1,0 +1,21 @@
+.wrap{
+    box-sizing: border-box;
+    width: 1800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border: aqua solid 2px;
+    background-color: honeydew;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+}
