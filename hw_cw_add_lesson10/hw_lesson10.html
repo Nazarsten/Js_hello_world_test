@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="hw_lesson10.css">
+</head>
+<body>
+
+
+<script>
+
+//- Создать произвольный елемент с id = text.  Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
+// let div = document.createElement('div');
+// div.setAttribute('id','text');
+// div.innerText= 'Hello Okten';
+// let button = document.createElement('button');
+// document.body.append(button);
+// button.innerText='hide text';
+// button.setAttribute('onclick','hide()');
+// document.body.append(div);
+// function hide() {
+//     div.style.display='none'
+// }
+//--------------------------------------------------------------------
+// - Создайте кнопку, при клике на которую, она будет скрывать сама себя.
+// let button = document.createElement('button');
+// button.innerText='bye bye';
+// document.body.append(button);
+// button.setAttribute('onclick','hide()');
+// function hide(hide) {
+//     button.style.display='none'
+// }
+//----------------------------------------------------------------------------
+// - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту
+// та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+
+// let forms = document.createElement('forms');
+// let input = document.createElement('input');
+// forms.appendChild(input);
+// input.setAttribute('placeholder','ваш вік');
+// document.body.append(forms);
+// let button = document.createElement('button');
+// document.body.append(button);
+// button.innerText ='submit';
+// button.setAttribute('onclick','ans()');
+// function ans() {
+//     let p = document.createElement('p');
+//     document.body.append(p);
+//     if (input.value>=18){
+//         p.innerText='Користувачу вже є 18 років'
+//     }else{
+//        p.innerText='Користувачу ще немає 18-ти років!'
+//     }
+// }
+
+//-------------------------------------------------------------------------------
+// - Создайте меню, которое раскрывается/сворачивается при клике
+// let button = document.createElement('button');
+//     button.innerText='menu';                    //-створив кнопку menu
+//     document.body.append(button);
+//
+//     let div = document.createElement('div');
+//     div.classList.add('hide');
+//     document.body.append(div);             //- створив блок в якому буде список,присвоїв клас з display:none;
+//
+//
+//     for (i = 0; i <= 10; i++) {
+//         let li = document.createElement('li');
+//         li.innerText = 'item'+i;                     //-згенерував список з 10 елементів
+//         div.appendChild(li);
+//     }
+// document.querySelector('button').onclick= function () {
+//     document.querySelector('div').classList.toggle('hide')      //- привязав подію до дії
+// };
+//---------------------------------------------------------------
+// - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
+//     Вывести список комментариев в документ, каждый в своем блоке.
+//     Добавьте каждому комментарию по кнопке для сворачивания его body.
+// let listComent =[];
+// for (i=0; i<=20;i++){
+//     listComent[i]= {title:i, body:'lorem ipsum dolo sit ameti'}
+// }
+// for( item of listComent){
+//
+//     let part = document.createElement("part");
+//     document.body.append(part);
+//
+//     let titleDiv = document.createElement("div");
+//     titleDiv.innerText = item.title;
+//     titleDiv.classList.add('coment');
+//     document.body.append(titleDiv);
+//
+//     let bodyDiv = document.createElement('p');
+//     bodyDiv.innerText = item.body;
+//     bodyDiv .classList.add('hide');
+//     bodyDiv.classList.add('text');
+//     document.body.append(bodyDiv);
+//
+//     let button =document.createElement('button');
+//     button.innerText='More';
+//     document.body.append(button);
+//
+//     button.onclick = ()=>{
+//        bodyDiv.classList.toggle('hide')
+//     };
+//     part.append(titleDiv,bodyDiv,button);
+// }
+//------------------------------------------------------------------------------
+</script>
+
+</body>
+</html>

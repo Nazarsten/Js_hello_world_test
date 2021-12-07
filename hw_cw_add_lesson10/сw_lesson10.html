@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //- створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
+    // Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
+    // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+    //
+//     let form1 = document.createElement('form');
+//     document.body.append(form1);
+//
+//     let inp1 = document.createElement('input');
+//     let inp2 = document.createElement('input');
+//     let button1 = document.createElement('button');
+//     let result = document.createElement('p');
+//
+//     inp1.setAttribute('placeholder','type any text1');
+//     inp2.setAttribute('placeholder','type any text2');
+//     form1.appendChild(inp1);
+//     form1.appendChild(inp2);
+//
+//     document.body.append(result);
+//     document.body.append(button1);
+//
+//     button1.innerText='concat';
+//     button1.style.margin= '0px 0px 20px 0px';
+//
+//     button1.onclick =function(){
+//         result.innerText=inp1.value +inp2.value
+//     };
+//
+// //-------------------------------------------------------------
+//     let form2 = document.createElement('form');
+//     document.body.append(form2);
+//
+//     let inp3 = document.createElement('input');
+//     let inp4 = document.createElement('input');
+//     let button2 = document.createElement('button');
+//     let result2 = document.createElement('p');
+//
+//     form2.appendChild(inp3);
+//     form2.appendChild(inp4);
+//
+//     inp3.setAttribute('placeholder','type any text3');
+//     inp4.setAttribute('placeholder','type any text4');
+//
+//     document.body.append(result2);
+//     document.body.append(button2);
+//     button2.innerText='concat';
+//
+//     button2.onclick =function(){
+//         result2.innerText=inp3.value +inp4.value
+//     };
+    //
+    //
+    //----------------------------------------------------------------------------------------------------
+    // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+    //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
+
+    let inp1 = document.createElement('input');
+    let inp2 = document.createElement('input');
+    let inp3 = document.createElement('input');
+    let button = document.createElement("button");
+    button.innerText=' create table';
+    document.body.append(inp1,inp2,inp3,button);
+
+    inp1.setAttribute('placeholder','кількість рядків');
+    inp2.setAttribute('placeholder','кількість полів');
+    inp3.setAttribute('placeholder','вміст полів');
+
+    button.addEventListener('click', function () {
+        let line = inp1.value;
+        let fieldCount = inp2.value;
+        let content = inp3.value;
+
+
+    function createTable(td, tr ,inner) {
+        let table = document.createElement('table');
+        let divTable = document.createElement('div');
+        table.style.border ='black 1px solid';
+
+        divTable.appendChild(table);
+        document.body.appendChild(divTable);
+
+        for( let i =0; i < tr; i++){
+            let tr = document.createElement('tr');
+            tr.style.border = '1 px solid black';
+
+            for( let j =0; j<td; j++){
+                let td = document.createElement('td');
+                td.style.border ='1px solid black';
+                td.innerText =`${inner}`;
+                table.appendChild(tr);
+                tr.appendChild(td);
+            }
+        }
+    }
+    createTable(line,fieldCount,content)
+    })
+</script>
+</body>
+</html>
