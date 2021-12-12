@@ -1,0 +1,18 @@
+.wrapper,
+.coments{
+    border: 1px solid orange;
+    margin: 10px;
+    padding: 10px;
+}
+.postWrapper{
+    display: none;
+}
+.post{
+    margin: 10px;
+}
+.button_of_coments{
+    margin: 5px;
+}
+.comentWrapper{
+    display: none;
+}
