@@ -1,0 +1,54 @@
+/*!*user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.*/
+/*блоки с краткой информацией про post - в ряд по 5 объектов.*/
+
+
+.wrapPosts {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    /*border: orange 1px solid;*/
+    /*background-color: honeydew;*/
+    margin: 10px;
+    padding: 10px;
+}
+.hide{
+    display: none;
+}
+.wrapUser{
+    margin-left: 25px;
+    padding: 20px;
+    border: orange 1px solid;
+    border-radius: 10px;
+    background-color: honeydew;
+    text-align: justify;
+    width: 35%;
+    box-shadow: 10px 5px 5px silver;
+}
+.buttonPostCurrentUser{
+    width: 90%;
+    border: aqua 1px solid;
+    border-radius: 5px;
+    background-color: honeydew;
+    align-self: center;
+}
+.postTitle{
+    text-align: center;
+    width: 17%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: aqua 1px solid;
+   justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+}
+.buttonDetails{
+
+}
+
+br{
+    display: none;
+}

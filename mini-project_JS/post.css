@@ -1,0 +1,35 @@
+
+.mainsPostDiv{
+    border: orange 1px solid;
+    margin:40px;
+    padding: 20px;
+    width: 30%;
+    background-color: honeydew;
+    box-shadow: 10px 5px 5px silver;
+    border-radius: 10px;
+}
+.coment{
+   width: 21%;
+    border: aqua 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: honeydew;
+}
+.hide{
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+br{
+    display: none;
+}
