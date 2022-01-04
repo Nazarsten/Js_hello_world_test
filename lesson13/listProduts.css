@@ -1,0 +1,33 @@
+.wrap{
+    border:1px solid aqua;
+    margin: 50px;
+    display: flex;
+    width: 1400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.card{
+    border:1px solid aqua;
+    margin: 20px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 10px 5px 5px silver
+}
+body{
+    display: flex;
+    justify-content: space-around;
+}
+.buttonClear{
+    width: 100px;
+    margin: 20px;
+
+}
+
+.buttonDeleteFromList{
+    margin: 5px;
+}
+
+.wrapperForButton{
+    display: flex;
+    align-self: end;
+}
